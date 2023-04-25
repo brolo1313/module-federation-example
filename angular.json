@@ -42,9 +42,7 @@
 						"outputPath": "dist/mfe1",
 						"index": "projects/mfe1/src/index.html",
 						"main": "projects/mfe1/src/main.ts",
-						"polyfills": [
-							"zone.js"
-						],
+						
 						"tsConfig": "projects/mfe1/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
@@ -172,9 +170,7 @@
 						"outputPath": "dist/mfe2",
 						"index": "projects/mfe2/src/index.html",
 						"main": "projects/mfe2/src/main.ts",
-						"polyfills": [
-							"zone.js"
-						],
+					
 						"tsConfig": "projects/mfe2/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
@@ -302,9 +298,7 @@
 						"outputPath": "dist/shell",
 						"index": "projects/shell/src/index.html",
 						"main": "projects/shell/src/main.ts",
-						"polyfills": [
-							"zone.js"
-						],
+					
 						"tsConfig": "projects/shell/tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
 						"assets": [
