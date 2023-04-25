@@ -52,6 +52,7 @@
               "projects/mfe1/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/mfe1/src/styles.scss"
             ],
             "scripts": []
@@ -171,6 +172,7 @@
               "projects/mfe2/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/mfe2/src/styles.scss"
             ],
             "scripts": []
@@ -290,6 +292,7 @@
               "projects/shell/src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/shell/src/styles.scss"
             ],
             "scripts": []
