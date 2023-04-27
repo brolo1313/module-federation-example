@@ -8,6 +8,7 @@ import { StoreModule } from '@ngrx/store';
 import { metaReducers, reducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
+import { HomeModuleModule } from './components/home/home-module/home-module.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EffectsModule } from '@ngrx/effects';
     AppRoutingModule,
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    EffectsModule.forRoot([])
+    EffectsModule.forRoot([]),
+    HomeModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

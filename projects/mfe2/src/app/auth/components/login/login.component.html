@@ -1,1 +1,7 @@
-<p>login works!</p>
+<h5>Get values at shell store</h5>
+
+<div *ngFor="let name of names$ | async ">
+    <ul>
+        <li>{{name}}</li>
+    </ul>
+</div>
