@@ -1,0 +1,42 @@
+<div id="nav-main-wrapper">
+  <div class="container">
+    <div class="header-row row">
+      <div class="header-section col-4">
+        <div class="logo d-flex align-items-center">
+          <img
+            src="/assets/icons/expert-view-logo-ext.svg"
+          />
+        </div>
+      </div>
+      <div class="header-section col-8 right">
+        <div class="menu d-flex align-items-center">
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a *ngIf="isMfe1" class="navbar-brand  text-white" href="#">MFE1</a>
+              <a *ngIf="isMfe2" class="navbar-brand  text-white" href="#">MFE2</a>
+              <a *ngIf="!isMfe2 && !isMfe1" class="navbar-brand  text-white" href="#">NGRX + MFE</a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item cursor-pointer">
+                    <a class="nav-link active text-white" aria-current="page" (click)="navigateToHome()">Home</a>
+                  </li>
+                  <li *ngIf="!isMfe1" class="nav-item cursor-pointer">
+                    <a class="nav-link text-white" (click)="navigateToMFE2()">MFE2</a>
+                  </li>
+                  <li  *ngIf="!isMfe2"  class="nav-item cursor-pointer">
+                    <a class="nav-link text-white" (click)="navigateToMFE1()">MFE1</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

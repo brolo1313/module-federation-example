@@ -1,0 +1,25 @@
+
+.footer-wrapper {
+  background-color: black;
+  color: white;
+  height: 208px;
+  width: 100%;
+  bottom: 0;
+  .amdocs-logo {
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+
+  .rate {
+    width: 270px;
+    margin-right: 90px;
+    margin-top: 64px;
+    line-height: 20px;
+    margin-bottom: 17px;
+  }
+
+  .rights-text {
+    font-size: 12px;
+    font-weight: 200;
+  }
+}

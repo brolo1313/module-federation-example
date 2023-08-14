@@ -9,6 +9,7 @@ import { metaReducers, reducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { HomeModuleModule } from './components/home/home-module/home-module.module';
+import { UiModule } from 'projects/core-package/src/lib/ui/amdocs-ui.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeModuleModule } from './components/home/home-module/home-module.modu
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
-    HomeModuleModule
+    HomeModuleModule,
+    UiModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
