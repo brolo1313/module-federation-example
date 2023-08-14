@@ -4,7 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './components/login/login.component';
 import { StoreModule } from '@ngrx/store';
-import { homeReducer, reportsKey } from 'projects/shell/src/app/components/home/reducers/home-reducers';
+import { Mfe2Reducer } from './components/login/reducer/mfe2-reducers';
+import { homeReducer } from 'projects/shell/src/app/components/home/reducers/home-reducers';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { homeReducer, reportsKey } from 'projects/shell/src/app/components/home/
   imports: [
     CommonModule,
     AuthRoutingModule,
-    StoreModule.forFeature(reportsKey, homeReducer),
+    StoreModule.forFeature('mfe2State', Mfe2Reducer),
+    StoreModule.forFeature('shellState', homeReducer)
   ]
 })
 export class AuthModule { }
